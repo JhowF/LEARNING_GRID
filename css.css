@@ -1,0 +1,96 @@
+html body{
+    margin:0;
+    padding:0;
+    box-sizing:borde-box;
+    background-color:white;
+    
+  }
+  
+  .container{
+    display:grid;
+     grid-template-columns: 4fr 1fr;
+     grid-template-rows: 20vh 50vh 29vh;
+     grid-template-areas: 
+        "b b"
+        ;
+    /*   Usado para colocar espaços */
+     grid-gap:3px; 
+  /*    grid-column-gap:20px; */
+  /*    grid-row-gap:20px; */
+  
+  }
+  
+  header{
+    height:auto;
+    background-color:blue;
+    grid-area:b;
+  }
+  #hellow{
+    position:relative;
+    text-align: center;
+    color:white;
+    font-size:50px;
+    margin-top:10px;
+  }
+  #jon{
+    text-align:left;
+    padding-left:20px;
+    margin-top:0;
+    padding-top:0;
+  }
+  main{
+    height:auto;
+    background-color:yellow;
+    grid-column:1/2;
+    
+  }
+  #here{
+    margin-left:20px;
+    font-size:25px;
+  }
+  #my{
+    margin-left:30px;
+    margin-right:5px;
+    margin-top:35px;
+    font-size:20px;
+     
+  }
+  aside{
+    height:auto;
+    background-color:red;
+    grid-column:2/3;
+    grid-row:2/4;
+    
+  }
+  #we{
+    padding-left:8px;
+    font-size:22px;
+  }
+  #please{
+    padding-left:8px;
+  }
+  footer{
+    height:auto;
+    background-color:purple;
+  }
+  #footer{
+    font-size:20px;
+    margin-top:13px;
+    margin-left:20px;
+    margin-bottom:0;
+    
+  }
+  a{
+    display:block;
+    text-decoration:none;
+    color:black;
+    width:200px;
+    padding-top:20px;
+    padding-left:5px;
+    transition-property:padding-left,color;
+    transition-duration: 0.5s;
+  }
+  a:hover, a:focus{
+    color:orange;
+    padding-left:30px;
+  }
