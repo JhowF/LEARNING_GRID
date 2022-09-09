@@ -1,0 +1,79 @@
+html body{
+    margin:0;
+    padding:0;
+  }
+  .container{
+    background-color:#333;
+    border: 1px solid red;
+    padding:15px;
+    display:grid;
+    grid-template-columns:50px auto 10%;
+    grid-template-rows:auto auto 20%;
+    height:40vh;
+    gap:3px;
+  }
+  .container div{
+    background-color:#ccc;  
+    padding: 20px;
+    border: 1px solid blue;  
+    
+    
+  }
+  
+  #div1{
+    display:grid;
+    grid-template-rows:auto auto;
+    
+    
+  }
+  
+  
+  
+  .container2{
+    display:grid;
+     grid-template-areas:
+      "header header header header header"
+      "aside main main main jho"
+       "footer footer footer footer jho";
+    height:auto;
+    padding:10px;
+    background-color:#666;
+    grid-gap:5px;
+    
+    
+  }
+  #header{
+    display:grid;
+    height:15vh;
+    background-color:blue;
+    grid-area: header;
+   
+  }
+  
+  #aside{
+    background-color:red;
+    padding-left:10px;
+    height:70vh;
+    grid-area:aside;
+  }
+  #main{
+    background-color:green;
+    padding-left:10px;
+    height:70vh;
+    grid-area:main;
+    
+  }
+  #footer{
+    background-color:pink;
+    padding-left:10px;
+    height:15vh;
+    grid-area:footer;
+  }
+  #sidebar{
+    background-color:white;
+    grid-area:jho;
+    
+  }
+  #sidebar p{
+    text-align:center;
+  }
